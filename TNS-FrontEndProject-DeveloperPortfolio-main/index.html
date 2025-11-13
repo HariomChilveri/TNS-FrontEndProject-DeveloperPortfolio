@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajinkya Ladkat – Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#hero" class="logo">Developer Portfolio</a>
+        <ul class="nav-links">
+          <li class="li"><a href="#hero">Home</a></li>
+          <li class="li"><a href="#projects">Projects</a></li>
+          <li class="li"><a href="#experience">Experience</a></li>
+          <li class="li"><a href="#about">About Me</a></li>
+          <li class="li"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero aos aos-fade">
+      <div class="hero-content hero-center">
+        <h1>Hello, I'm <span>Ajinkya Ladkat</span></h1>
+        <p class="hero-desc">
+          Turning ideas into impactful digital solutions — I build clean,
+          scalable, and creative projects that bridge technology with real-world
+          problems.
+        </p>
+        <a href="#contact" class="primary-btn">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about aos aos-fade-up">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I’m Ajinkya Ladkat, a developer driven by curiosity and the thrill of
+        building. From intuitive job portals to AI-driven wildfire detection, I
+        enjoy creating solutions that matter. With a strong foundation in web
+        development, problem-solving, and security-focused systems, I aim to
+        craft projects that are not only functional but also memorable. Beyond
+        code, I’m constantly exploring new tech, pushing boundaries, and
+        sharpening my skills to grow into a versatile engineer.
+      </p>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects">
+      <h2
+        class="section-title aos"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
+        Projects
+      </h2>
+
+      <div
+        class="project-container aos"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="project-list-wide">
+          <!-- WorkForge -->
+          <a
+            class="project-tile-wide aos"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+            href="https://workforge1.netlify.app/"
+            target="_blank"
+          >
+            <div class="project-thumb-wide aos" data-aos="flip-left">
+              <img src="./assets/wf.png" alt="WorkForge Thumbnail" />
+            </div>
+            <div class="project-meta-wide aos" data-aos="fade-left">
+              <h3>WorkForge</h3>
+              <p>
+                <strong>Job Board Portal:</strong><br />
+                A robust job board platform to efficiently connect employers and
+                candidates, with advanced filters and a clean UI.
+              </p>
+            </div>
+          </a>
+
+          <!-- SlimLink.io -->
+          <a
+            class="project-tile-wide aos"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+            href="https://slimlinkio.netlify.app/"
+            target="_blank"
+          >
+            <div class="project-thumb-wide aos" data-aos="flip-left">
+              <img src="./assets/sl.png" alt="SlimLink.io Thumbnail" />
+            </div>
+            <div class="project-meta-wide aos" data-aos="fade-left">
+              <h3>SlimLink.io</h3>
+              <p>
+                <strong>React URL Shortener:</strong><br />
+                A modern, feature-rich URL shortener with analytics and custom
+                branding, built with React.
+              </p>
+            </div>
+          </a>
+
+          <!-- Forest Fire Detector -->
+          <a
+            class="project-tile-wide aos"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            href="https://huggingface.co/spaces/AjinkyaLadkat/Forest_Fire_Detection"
+            target="_blank"
+          >
+            <div class="project-thumb-wide aos" data-aos="flip-left">
+              <img
+                src="./assets/ffd.png"
+                alt="Forest Fire Detector Thumbnail"
+              />
+            </div>
+            <div class="project-meta-wide aos" data-aos="fade-left">
+              <h3>Forest Fire Detector</h3>
+              <p>
+                <strong>Deep Learning Detection:</strong><br />
+                AI-driven tool to accurately detect and localize forest fires
+                from satellite imagery for rapid emergency response.
+              </p>
+            </div>
+          </a>
+
+          <!-- ShadowCrypt -->
+          <a
+            class="project-tile-wide aos"
+            data-aos="zoom-in"
+            data-aos-delay="450"
+            href="https://huggingface.co/spaces/AjinkyaLadkat/Secure-Multimedia-Steganography-System-With-AES-Encryption"
+            target="_blank"
+          >
+            <div class="project-thumb-wide aos" data-aos="flip-left">
+              <img src="./assets/sc.png" alt="ShadowCrypt Thumbnail" />
+            </div>
+            <div class="project-meta-wide aos" data-aos="fade-left">
+              <h3>ShadowCrypt</h3>
+              <p>
+                <strong>Multimedia Steganography + AES:</strong><br />
+                A unique system to securely hide data in images and audio with
+                AES encryption for private communication.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact aos aos-fade-up">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
+        <div class="form-result" id="formResult"></div>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
